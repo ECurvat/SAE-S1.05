@@ -54,7 +54,7 @@ nav {
     color: black;
 }
 
-/* Effet au passage de la souris, padding plus grand sur les côtés pour effet de largeur et radius dessus */
+/* Effet au passage de la souris, padding plus grand sur les côtés pour effet de largeur et radius dessus  */
 .nav-item:hover {
     background-color: rgba(217, 217, 217, 0.5);
     border-radius: 10px;
