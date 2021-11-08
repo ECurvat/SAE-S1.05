@@ -50,3 +50,17 @@ nav {
     border-radius: 10px;
     padding: 4px 15px 4px 15px;
 }
+
+/* On enlève le scroll horizontal --> Chercher pourquoi ça met un screen alors que 100vw ?! */
+body {
+    overflow: hidden;
+}
+
+/* Mise en place de la grille pour les items de la page d'accueil*/
+.acc {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+}
+
+/* On dit où chaque élément */
