@@ -1,3 +1,13 @@
+/* 
+A FAIRE
+- régler le scroll horizontal --> pourquoi ?!
+- remplacer div dans acc-2 --> par quoi ?!
+
+
+
+
+*/
+
 /* Mise en place de la grille pour la barre de navigation */
 nav {
     grid-template-columns: 3fr 1fr 2fr 2fr 2fr 2fr 1fr 3fr;
@@ -51,16 +61,44 @@ nav {
     padding: 4px 15px 4px 15px;
 }
 
-/* On enlève le scroll horizontal --> Chercher pourquoi ça met un screen alors que 100vw ?! */
-body {
-    overflow: hidden;
-}
-
 /* Mise en place de la grille pour les items de la page d'accueil*/
 .acc {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 30fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     display: grid;
 }
 
-/* On dit où chaque élément */
+/* On positionne les éléments dans la grille */
+.acc-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+/* On définit aussi une nouvelle grille dans cet élément */
+.acc-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+}
+
+.acc-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.frgr {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.elcu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
