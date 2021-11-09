@@ -107,6 +107,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    align-items: flex-end;
 }
 
 .foo-1 {
@@ -126,4 +127,10 @@ footer {
 
 .tcenter {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
 }
