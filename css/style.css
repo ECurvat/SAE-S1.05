@@ -2,7 +2,7 @@
 A FAIRE
 - régler le scroll horizontal --> pourquoi ?!
 - remplacer div dans acc-2 --> par quoi ?!
-
+- calendrier dans footer pour événements
 
 
 
@@ -14,7 +14,6 @@ nav {
     grid-template-rows: 1fr;
     width: 100vw;
     display: grid;
-    text-align: center;
 }
 
 /* On dit où chaque élément de la barre de navigation commence et se termine */
@@ -101,4 +100,30 @@ nav {
 .elcu {
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+/* Grille pour le footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.foo-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.foo-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.foo-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.tcenter {
+    text-align: center;
 }

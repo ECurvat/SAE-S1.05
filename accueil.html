@@ -6,7 +6,7 @@
 </head>
 <title>Le BUT Informatique</title>
     <body>
-        <nav>
+        <nav class="tcenter">
             <img class="logo" />
             <div class="lien-accueil"><a class="nav-item" href="">Accueil</a></div>
             <div class="lien-formation"><a class="nav-item" href="">Formation</a></div>
@@ -36,7 +36,7 @@
             </section>
             <section class="acc-2">
                 <h1>Qui sommes-nous ?</h1>
-                <div class="frgr">
+                <object class="frgr">
                     <h2>François Graux</h2>
                     <p>Pellentesque ac tellus accumsan, ornare lorem a, hendrerit leo. Donec vel egestas metus. 
                     Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem eu, 
@@ -44,8 +44,8 @@
                     Pellentesque ac tellus accumsan, ornare lorem a, hendrerit leo. Donec vel egestas metus. 
                     Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem eu, 
                     dignissim molestie ante. Fusce quis tristique urna, et lobortis erat. Aliquam eget cursus velit.</p>
-                </div>
-                <div class="elcu">
+                    </object>
+                <object class="elcu">
                     <h2>Elliot Curvat</h2>
                     <p>Pellentesque ac tellus accumsan, ornare lorem a, hendrerit leo. Donec vel egestas metus. 
                     Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem eu, 
@@ -54,7 +54,7 @@
                     Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem eu, 
                     dignissim molestie ante. Fusce quis tristique urna, et lobortis erat. Aliquam eget cursus velit.
                     </p>
-                </div>
+                </object>
             </section>
             <section class="acc-3">
                 <h1>Pourquoi ce site</h1>
@@ -71,11 +71,24 @@
                 et lobortis erat. Aliquam eget cursus velit.</p>
             </section>
         </main>
-        <footer>
-            Prochain forum : l'étudiant le 34/20/2030 à Lyon
-            Truc de recherche / newsletter
-            Copyright
-            Mentions légales / politique de confidentialité
+        <footer class="tcenter">
+            <section class="foo-1">
+                Prochain forum : l'étudiant le 34/20/2030 à Lyon
+            </section>
+            <section class="foo-2">
+                <h3>Recherche</h3>
+                <input type="text" placeholder="Recherche"><button>Loupe</button>
+                <br>
+                <h3>Newsletter</h3>
+                <p>Nous vous tiendrons au courant des informations sur les prochains salons, les informations gouvernementales,
+                et les nouveautés en général sur le B.U.T.
+                </p>
+                <input type="email" placeholder="Email"><button>S'inscrire</button>
+            </section>
+            <section class="foo-3">
+                Copyright
+                Mentions légales / politique de confidentialité
+            </section>
         </footer>
     </body>
 </html>
