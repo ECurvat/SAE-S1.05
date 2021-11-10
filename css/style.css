@@ -21,6 +21,7 @@ nav {
     color: white;
     position: fixed;
     top: 0;
+    height: 5vh;
 }
  
 body {
@@ -86,7 +87,7 @@ body {
 }
 
 .acc-1 {
-    background-color: white;
+    background-color: rgb(255,255,255,0.97);
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     letter-spacing: .5px;
@@ -100,12 +101,12 @@ body {
 }
 
 .acc-2 {
-    background-color: rgb(48,48,54,0.95);
+    background-color: rgb(48,48,54,0.97);
     color: white;
 }
 
 .acc-3 {
-    background-color: rgb(126, 181, 102,0.85);
+    background-color: rgb(126, 181, 102,0.97);
 }
 
 .frgr {
@@ -154,4 +155,8 @@ table {
 
 .campus {
     width: 100%;
+    background-attachment: fixed;
+    top: 5vh;
+    position: sticky; 
+    z-index: -1;
 }
