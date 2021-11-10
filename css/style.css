@@ -4,10 +4,14 @@ A FAIRE
 - remplacer div dans acc-2 --> par quoi ?!
 - calendrier dans footer pour événements
 
-
-
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
 
 header {
     display: flex;
@@ -35,6 +39,14 @@ body {
     text-decoration: none;
     color: white;
     padding: 4px 15px 4px 15px;
+}
+
+input{
+    border-radius: 10px;
+    
+}
+button{
+    border-radius: 10px;
 }
 
 /* Effet au passage de la souris, padding plus grand sur les côtés pour effet de largeur et radius dessus  */
@@ -123,7 +135,6 @@ table {
 
 .campus {
     width: 100%;
-    background-attachment: fixed;
     top: 5vh;
     position: sticky; 
     z-index: -1;
