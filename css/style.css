@@ -9,9 +9,6 @@ A FAIRE
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 
-main{
-}
-/* Mise en place de la grille pour la barre de navigation */
 header {
     display: flex;
     justify-content: center;
