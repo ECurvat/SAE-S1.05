@@ -43,10 +43,25 @@ body {
 
 input{
     border-radius: 10px;
-    
+    padding: 5px;
+    border: none;
+    border: rgb(48,48,54,1) solid 2px;
 }
+
+input:focus
+{
+    outline: none;
+}
+
 button{
     border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(48,48,54,1);
+    border: none;
+}
+
+i {
+    color: white;
 }
 
 /* Effet au passage de la souris, padding plus grand sur les côtés pour effet de largeur et radius dessus  */
@@ -169,4 +184,8 @@ table {
     font-weight: 700;
     padding: 25px;
     border-radius: 5px;
+  }
+
+  .logo {
+      height: 100%;
   }
