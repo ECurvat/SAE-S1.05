@@ -32,6 +32,11 @@ body {
     font-weight: 300;
 }
 
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5em;
+}
+
   
 /* On enlève la couleur violet dégueu et le soulignement */
 .nav-item {
