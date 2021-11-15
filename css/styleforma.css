@@ -6,15 +6,31 @@ main {
     height: 300vh;
 }
 
-.left-col {
+.col-1 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 2;
     background-color: red;
 }
 
-.right-row-1 {
+.col-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: purple;
+}
+
+.col-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: pink;
+}
+
+.row-1 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -22,7 +38,7 @@ main {
     background-color: green;
 }
 
-.right-row-2 {
+.row-2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -30,10 +46,16 @@ main {
     background-color: blue;
 }
 
-.right-row-3 {
+.row-3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     background-color: orange;
+}
+
+h1 {
+    position: relative;
+    transform: rotate(270deg);
+    margin-top: 10vh;
 }
