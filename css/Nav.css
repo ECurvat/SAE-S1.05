@@ -95,15 +95,15 @@ body{
   }
   .navbar .menu-list{
     position: fixed;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     max-width: 400px;
     left: -100%;
-    top: 0px;
+    top: -25px;
     display: block;
     padding: 20px 0;
     text-align: center;
-    background: #222;
+    background: rgb(48,48,54,1);
     transition: all 0.3s ease;
   }
   .navbar.show .menu-list{
