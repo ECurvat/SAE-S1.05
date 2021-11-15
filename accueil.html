@@ -8,15 +8,25 @@
 </head>
 <title>Le BUT Informatique</title>
     <body>
-        <header class="tcenter">
-            <img class="logo" src="images/logoiut.png" />
-            <div class="lien lien-accueil"><a class="nav-item" href="">Accueil</a></div>
-            <div class="lien lien-formation"><a class="nav-item" href="">Formation</a></div>
-            <div class="lien lien-contenu"><a class="nav-item" href="">Contenu</a></div>
-            <div class="lien lien-témoignages"><a class="nav-item" href="">Témoignages</a></div>
-            <div class="recherche"><input placeholder="Recherche"><button><i class="fas fa-search"></i></button></div>
-        </header>
-        
+    <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            IUT Lyon 4
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Formation</a></li>
+            <li><a href="">Contenu</a></li>
+            <li><a href="">Témoignages</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
             <main class="acc">
                     <div class="bvn">
                         <img class="campus" src="images/doua1.jpg">
@@ -165,6 +175,22 @@
             </section>
             <br>
         </footer>
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+              navbar.classList.add("show");
+              menuBtn.classList.add("hide");
+              body.classList.add("disabled");
+            }
+            cancelBtn.onclick = ()=>{
+              body.classList.remove("disabled");
+              navbar.classList.remove("show");
+              menuBtn.classList.remove("hide");
+            }
+          </script>
     </body>
 </html>
 <!-- test -->

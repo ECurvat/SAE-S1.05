@@ -1,89 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* ---------------création du flex de la nav barre--------------- */
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    width: 100vw;
-    background-color: #303036;
-    color: white;
-    position: fixed;
-    top: 0;
-    height: 5vh;
-    z-index: 2;
+/* On enlève les marges de base, */
+body{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
 }
 
-/* ------body------ */
-body {
-    /* background-image: url("../images/background.jpg"); */
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
+/* On met une limite de taille pour éviter que ça prenne toute la largeur de l'écran */
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 10px;
 }
 
-/* On enlève la couleur violet dégueu et le soulignement + mise en forme global*/
-.nav-item {
-    text-decoration: none;
-    color: white;
-    padding: 4px 15px 4px 15px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
+/* On met la navbar en sticky et on la ramène au premier plan */
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: rgb(48,48,54,1);
 }
 
-input{
-    border-radius: 10px;
-    padding: 5px;
-    border: none;
-    border: rgb(48,48,54,1) solid 2px;
+/* Flex sur tous les éléments de la navbar (logo compris) */
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-input:focus
-{
-    outline: none;
+/* Mise en forme du logo, ici on a un texte temporairement */
+.navbar .logo {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 4px;
 }
 
-button{
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(48,48,54,1);
-    border: none;
+/* On met les éléments sur une ligne les uns à coté des autres en flex */
+.navbar .menu-list{
+  display: inline-flex;
 }
 
-i {
-    color: white;
+/* On enlève les points des listes */
+.menu-list li{
+  list-style: none;
 }
 
-/* Effet au passage de la souris, padding plus grand sur les côtés pour effet de largeur et radius dessus  */
-.nav-item:hover {
-    background-color: rgba(217, 217, 217, 0.5);
-    border-radius: 10px;
+/* Paramètres de l'animation sur chaque élément et mise en forme des éléments de la navbar */
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-/* -----taille du logo---- */
-.logo {
-    height: 90%;
+/* Changement de couleur au hover d'un élément de la navbar */
+.menu-list li a:hover{
+  color: rgb(126, 181, 102,1);
 }
 
-a {
-    text-decoration: none;
-    color:initial;
+/* Taille et couleur des icônes pour afficher et fermer la navbar */
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
 }
 
+/* Positionnement des boutons pour afficher et fermer la navbar sur petit écran */
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+/* Ce qui est fait quand la largeur d'écran est inferieure à 868px */
 @media (max-width: 868px) {
-    header div {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: red;
-        height: 100vh;
-        width: 100%;
-        max-width: 400px;
-        display: block;
-        padding: 40px 0;
-        text-align: center;
-    }
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
 }
