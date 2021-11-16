@@ -34,6 +34,17 @@ A FAIRE
     grid-template-rows: .3fr 1fr;
 }
 
+.galerie {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.item {
+    text-align: center;
+}
+
 .photo {
     border-radius: 50%;
     width: 25%;
@@ -135,9 +146,9 @@ table {
     position: relative;
     text-align: center;
     color: red;
-  }
+}
   
-  .msg {
+.msg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -150,4 +161,4 @@ table {
     padding: 25px;
     border-radius: 5px;
     font-family: 'Bebas Neue', cursive;
-  }
+}
