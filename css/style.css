@@ -16,7 +16,8 @@ A FAIRE
 
 /* On positionne les éléments dans la grille */
 .acc-item {
-    padding: 3%;
+    padding: 5%;
+    font-size: 1.1em;
 }
 
 .acc-1 {
