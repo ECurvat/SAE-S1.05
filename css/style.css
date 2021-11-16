@@ -31,8 +31,12 @@ A FAIRE
 .portraits {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    height: auto;
+    grid-template-rows: .3fr 1fr;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 25%;
 }
 
 .acc-2 {
@@ -47,11 +51,29 @@ A FAIRE
 .frgr {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .elcu {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.frgr-photo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.elcu-photo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 /* Grille pour le footer */
