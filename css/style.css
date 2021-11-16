@@ -37,6 +37,7 @@ A FAIRE
 .photo {
     border-radius: 50%;
     width: 25%;
+    filter: grayscale(100%);
 }
 
 .acc-2 {
