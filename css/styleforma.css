@@ -84,5 +84,5 @@ p {
 
 .icon-battery {
     transform: rotate(90deg);
-    margin-bottom: 30px;
+    padding: 30px;
 }
