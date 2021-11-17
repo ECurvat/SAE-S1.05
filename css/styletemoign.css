@@ -5,10 +5,13 @@ main{
     display: flex;
     flex-direction: column;
 }
-section{
-    border: radius 10px;;
+
+h1{
+    font-size: xxx-large;
+    text-align: center;
 }
 
+/* ---------topbox----------- */
 .poursuite{
     display: flex;
     flex-direction: column;
@@ -17,27 +20,31 @@ section{
 .top{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: blueviolet;
-    width:50vw;
-    height: 99vh;
+    /* justify-content: space-evenly; */
+    background-color: #ffff;
     
 }
 
 .mid{
-    background-color: brown;
-    width:100vw;
-    height: 100vh;
+    background-color: rgb(48,48,54);
+    /* width:100vw;
+    height: 100vh; */
 }
 
 .bot{
-    background-color: cyan;
-    width:100vw;
-    height: 100vh;
+    background-color: rgb(126, 181, 102,1);
+    /* width:100vw;
+    height: 100vh; */
 }
 
 .card{
-    background-color: green;
-    width: 50vw;
-    height:100vh ;
+    background-color: lightblue;
+    width:50vh;
+    height:50vh ;
+    margin: 5%;
+    border-radius: 10px;
+    
 }
+
+/* ----------------midBox-------------------- */
+
