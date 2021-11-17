@@ -9,6 +9,10 @@ main {
 
 .left {
     background-color: rgb(126, 181, 102,1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .col-1 {
@@ -55,6 +59,5 @@ main {
 
 h1 {
     writing-mode: vertical-lr;
-    margin-top: 10vh;
     font-size: 3em;
 }
