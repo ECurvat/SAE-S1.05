@@ -1,10 +1,9 @@
 main {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: .5fr 3fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100vw;
     height: 279vh;
-    grid-column-gap: 10px;
 }
 
 .left {
@@ -59,5 +58,31 @@ main {
 
 h1 {
     writing-mode: vertical-lr;
+    font-size: 3.1em;
+}
+
+h2 {
     font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 93vh;
+    padding: 25px;
+}
+
+.icon-battery {
+    transform: rotate(90deg);
+    margin-bottom: 30px;
 }
