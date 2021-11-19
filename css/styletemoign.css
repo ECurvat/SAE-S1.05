@@ -24,13 +24,6 @@ h1{
     padding: 25px;
 }
 
-.mid{
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(48,48,54);
-   
-}
-
 .bot{
     background-color: rgb(126, 181, 102,1);
     
@@ -41,17 +34,51 @@ h1{
     width: 30%;
     gap: 5%;
     border-radius: 10px;
+}
+.card p{
+    padding: 10px;
+}
 
-    
+@media screen and (max-width: 988px)
+{
+    .top{
+        flex-direction: column;
+        align-content: space-between;
+        align-items: center;
+        
+        
+    }
+    .card{
+        width: 40vh;
+        margin-bottom: 10px;
+        
+    }
 }
 
 /* ----------------midBox-------------------- */
 
-.round{
+
+.mid{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(48,48,54);
+    padding: 25px;
+   
+}
+
+
+.circle1 ,.circle2{
     background-color: lightcoral;
     width: 200px;
     height: 200px;
     padding: 10px;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
-
+@media screen and (max-width: 988px)
+{
+    .mid{
+        flex-direction: column;
+        align-items: center;
+    }
+}
