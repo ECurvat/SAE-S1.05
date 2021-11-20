@@ -27,11 +27,10 @@ A FAIRE
     letter-spacing: .5px;
 }
 
-/* On définit aussi une nouvelle grille dans cet élément */
 .portraits {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .3fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .galerie {
@@ -41,15 +40,20 @@ A FAIRE
     flex-direction: row;
 }
 
+@media screen and (max-width: 988px)
+{
+    .galerie, .portraits{
+        flex-direction: column;
+    }
+}
+
 .item {
     text-align: center;
     padding: 20px;
 }
 
-.photo {
-    border-radius: 50%;
-    width: 25%;
-    filter: grayscale(100%);
+.portraits > div {
+    width: 50%;
 }
 
 .acc-2 {
