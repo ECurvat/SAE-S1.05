@@ -30,7 +30,7 @@ A FAIRE
 .portraits {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .galerie {
@@ -54,6 +54,12 @@ A FAIRE
 
 .portraits > div {
     width: 50%;
+}
+
+.portraits > div > img {
+    width: 25%;
+    filter: grayscale(100%);
+    border-radius: 50%;
 }
 
 .acc-2 {
