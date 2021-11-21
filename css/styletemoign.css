@@ -4,9 +4,6 @@
 main{
     display: flex;
     flex-direction: column;
-    background-image:url("/images/pexels-marc-mueller-380769.jpg");
-    background-size: contain;
-    background-attachment: fixed;
 }
 
 h1{
@@ -15,16 +12,12 @@ h1{
     color: lightsteelblue;
 }
 
-.contenu{
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 /* ---------topbox----------- */
 .poursuite{
     display: flex;
     flex-direction: column;
-    color: #ffff;
+    background-image:url("/images/pexels-marc-mueller-380769.jpg");
+    background-size: contain;
     
 
     
@@ -57,7 +50,6 @@ h1{
 {
     .top{
         flex-direction: column;
-        align-content: space-between;
         align-items: center;
         
         
@@ -96,34 +88,4 @@ h1{
         align-items: center;
     }
 }
-/* ---------------jestion du footer-------------- */
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: flex-end;
-    background-color: white;
-}
 
-.foo-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.foo-2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.foo-3 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    display: flex;
-    flex-direction: column;
-}
-
-.tcenter {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
