@@ -1,0 +1,21 @@
+.wrapper {
+    max-height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.wrapper .item {
+    min-width: 50vw;
+    width: 50vw;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+    scroll-snap-align: start;
+}

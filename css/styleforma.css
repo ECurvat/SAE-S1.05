@@ -80,7 +80,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-height: 93vh;
+    min-height: 93vh;
     padding: 25px;
 }
 
