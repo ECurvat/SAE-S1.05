@@ -40,13 +40,6 @@ A FAIRE
     flex-direction: row;
 }
 
-@media screen and (max-width: 988px)
-{
-    .galerie, .portraits{
-        flex-direction: column;
-    }
-}
-
 .item {
     text-align: center;
     padding: 20px;
@@ -118,9 +111,12 @@ A FAIRE
 }
 
 .bvn {
+    background:url("../images/doua1.jpg") center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
     position: relative;
     text-align: center;
-    color: red;
 }
   
 .msg {
@@ -136,4 +132,17 @@ A FAIRE
     padding: 25px;
     border-radius: 5px;
     font-family: 'Bebas Neue', cursive;
+}
+
+.tcenter{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 988px)
+{
+    .galerie, .portraits{
+        flex-direction: column;
+    }
 }
