@@ -35,6 +35,14 @@
     color: rgb(126, 181, 102,1);
 }
 
+.edt {
+    padding: 5%;
+}
+
+img {
+    width: 100%;
+}
+
 @media (max-width: 868px) {
     .wrapper {
         flex-direction: column;
