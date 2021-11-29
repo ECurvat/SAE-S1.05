@@ -41,6 +41,65 @@ img {
     width: 100%;
 }
 
+.edt {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    align-items: center;
+    grid-template-areas:
+      "vide lundi mardi mercredi jeudi vendredi"
+      "h8 lundi8 mardi8 mercre8 jeudi8 vendre8"
+      "h10 lundi10 mardi10 mercre10 jeudi10 vendre10"
+      "h12 lundi12 mardi12 mercre12 jeudi12 vendre12"
+      "h14 lundi14 mardi14 mercre14 jeudi14 vendre14"
+      "h16 lundi16 mardi16 mercre14 jeudi16 vendre16";
+  }
+
+.vide { grid-area: vide; }
+.lundi { grid-area: lundi; }
+.mardi { grid-area: mardi; }
+.mercredi { grid-area: mercredi; }
+.jeudi { grid-area: jeudi; }
+.vendredi { grid-area: vendredi; }
+.lundi8 { grid-area: lundi8;
+background-color: rgb(67, 151, 162); }
+.lundi10 { grid-area: lundi10;
+background-color: rgb(241, 158, 249); }
+.lundi12 { grid-area: lundi12; }
+.lundi14 { grid-area: lundi14; }
+.lundi16 { grid-area: lundi16; }
+.h8 { grid-area: h8; }
+.h10 { grid-area: h10; }
+.h12 { grid-area: h12; }
+.h14 { grid-area: h14; }
+.h16 { grid-area: h16; }
+.mardi8 { grid-area: mardi8; }
+.mardi10 { grid-area: mardi10; }
+.mardi12 { grid-area: mardi12; }
+.mardi14 { grid-area: mardi14; }
+.mardi16 { grid-area: mardi16; }
+.mercre8 { grid-area: mercre8; }
+.mercre10 { grid-area: mercre10; }
+.mercre12 { grid-area: mercre12; }
+.mercre14 { grid-area: mercre14; }
+.mercre16 { grid-area: mercre16; }
+.jeudi8 { grid-area: jeudi8; }
+.jeudi10 { grid-area: jeudi10; }
+.jeudi12 { grid-area: jeudi12; }
+.jeudi14 { grid-area: jeudi14; }
+.jeudi16 { grid-area: jeudi16; }
+.vendre8 { grid-area: vendre8; }
+.vendre10 { grid-area: vendre10; }
+.vendre12 { grid-area: vendre12; }
+.vendre14 { grid-area: vendre14; }
+.vendre16 { grid-area: vendre16; }
+
+.vide, .lundi, .mardi, .mercredi, .jeudi, .vendredi, .h8, .h10, .h12, .h14, .h16 {
+    background-color: rgb(48,48,54,1);
+}
+
 @media (max-width: 868px) {
     .wrapper {
         flex-direction: column;
