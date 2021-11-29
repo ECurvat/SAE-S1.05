@@ -13,9 +13,7 @@
 
 .wrapper .item {
     min-width: 20%;
-    /* width: calc((100%-95px)/3); */
-    min-height: 50vh;
-    /* height: 30vh; */
+    min-height: 30vh;
     text-align: center;
     scroll-snap-align: start;
     padding: 25px;
