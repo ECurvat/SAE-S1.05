@@ -16,8 +16,8 @@ h1{
 .poursuite{
     display: flex;
     flex-direction: column;
-    background-image:url("/images/pexels-marc-mueller-380769.jpg");
-    background-size: contain;
+    /* background-image:url("/images/pexels-marc-mueller-380769.jpg");
+    background-size: cover; */
     
 
     
@@ -76,7 +76,7 @@ h1{
     padding: 10px;
 }
 /* ---------------------------------- */
-.mid{
+.contact{
     display: flex;
     justify-content: space-around;
     background-color: rgb(48,48,54);
@@ -84,14 +84,19 @@ h1{
    
 }
 
-
-.circle1 ,.circle2{
-    background-color: lightseagreen;
+.content_C img{
     width: 200px;
     height: 200px;
-    padding: 10px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    border-radius: 100%;
+    border: 10px solid rgb(126, 181, 102,1);
+    
+}
+
+.contact p{
+    color: #ffff;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* --------------media query--------------- */
@@ -100,6 +105,9 @@ h1{
     .mid{
         flex-direction: column;
         align-items: center;
+    }
+    .circle{
+        margin-bottom: 10px;
     }
 }
 
