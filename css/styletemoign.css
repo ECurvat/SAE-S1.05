@@ -79,6 +79,7 @@ h1{
 .contact{
     display: flex;
     justify-content: space-around;
+    justify-items: center;
     background-color: rgb(48,48,54);
     padding: 25px;
    
@@ -89,7 +90,7 @@ h1{
     height: 200px;
     border-radius: 100%;
     border: 10px solid rgb(126, 181, 102,1);
-    
+
 }
 
 .contact p{
@@ -102,13 +103,29 @@ h1{
 /* --------------media query--------------- */
 @media screen and (max-width: 988px)
 {
-    .mid{
-        flex-direction: column;
-        align-items: center;
+    .contact{
+       display: grid;
+       grid-template-columns: 1fr,1fr;
+       grid-template-rows: 1fr,1fr;
+       grid-template-areas: 
+        "box1 box2"
+        "box3 box4";
+        justify-items: center;
+        justify-content: space-evenly;
     }
-    .circle{
-        margin-bottom: 10px;
+    .box1{
+        grid-area: box1;
     }
+    .box2{
+        grid-area: box2;
+    }
+    .box3{
+        grid-area: box3;
+    }
+    .box4{
+        grid-area: box4;
+    }
+    
 }
 
 @media screen and (max-width: 988px)
