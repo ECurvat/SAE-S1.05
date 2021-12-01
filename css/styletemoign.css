@@ -37,8 +37,8 @@ h1{
     background-color: rgba(126, 181, 102,1 );
     backdrop-filter: blur(5px);
     border-radius: 15px;
-    /* border-top :1px solid rgb(125, 125, 125);
-    border-left :1px solid rgb(125, 125, 125); */
+    transition: 0.3s;
+    margin: 5px;
 }
 
 .card .content .picture{
@@ -50,6 +50,7 @@ h1{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    /* filter: grayscale(100%); */
 }
 
 .card .content{
@@ -71,6 +72,12 @@ h1{
 .card p{
     padding: 10px;
 }
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+
 /* --------------------contact + card-cicrle------------------------ */
 .contact{
     background-color: rgb(48,48,54);
@@ -81,14 +88,16 @@ h1{
     justify-content: space-around;
     justify-items: center;
     padding: 25px;
+    
    
 }
 
 .content_C img{
     width: 200px;
     height: 200px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 10px solid rgb(126, 181, 102,1);
+    transition: 0.3s;
 
 }
 
@@ -97,6 +106,12 @@ h1{
     font-size: x-large;
     font-weight: bold;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.content_C img:hover{
+    transform: scale(1.03);
 }
 
 /* -------------------qui somme nous---------------- */
@@ -105,6 +120,7 @@ h1{
     background-color: rgb(126, 181, 102,1);
     color: white;
     padding: 5%;
+    text-align: center;
 }
 
 .Qui h1{
@@ -147,7 +163,7 @@ h1{
 }
 
 /* --------------media query--------------- */
-@media screen and (max-width: 988px)
+@media screen and (max-width: 1250px)
 {
     .card-circle{
        display: grid;
@@ -174,7 +190,7 @@ h1{
     
 }
 
-@media screen and (max-width: 988px)
+@media screen and (max-width: 1250px)
 {
     .top{
         flex-direction: column;
@@ -185,7 +201,7 @@ h1{
     }
 }
 
-@media screen and (max-width: 988px)
+@media screen and (max-width: 1250px)
 {
     .galerie, .portraits{
         flex-direction: column;
