@@ -10,19 +10,15 @@ h1{
     font-size: xxx-large;
     text-align: center;
     color: rgb(126, 181, 102,1);
+    margin: 20px;
 }
 
 
 .poursuite{
     display: flex;
     flex-direction: column;
-    /* background-image:url("/images/pexels-marc-mueller-380769.jpg");
-    background-size: cover; */
-    
-
-    
 }
-/* ---------------------Top + card----------------------- */
+/* ---------------------pousuite + card----------------------- */
 .top{
     display: flex;
     background-color:#ffff;
@@ -75,12 +71,15 @@ h1{
 .card p{
     padding: 10px;
 }
-/* ---------------------------------- */
+/* --------------------contact + card-cicrle------------------------ */
 .contact{
+    background-color: rgb(48,48,54);
+}
+
+.card-circle{
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    background-color: rgb(48,48,54);
     padding: 25px;
    
 }
@@ -100,10 +99,57 @@ h1{
     text-align: center;
 }
 
+/* -------------------qui somme nous---------------- */
+
+.Qui {
+    background-color: rgb(126, 181, 102,1);
+    color: white;
+    padding: 5%;
+}
+
+.Qui h1{
+    color: white;
+}
+
+.portraits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Qui-item {
+    padding: 5%;
+    font-size: 1.1em;
+}
+
+.portraits > div {
+    width: 100%;
+}
+
+.portraits > div > img {
+    width: 25%;
+    filter: grayscale(100%);
+    border-radius: 50%;
+}
+
+.ELL{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FRA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* --------------media query--------------- */
 @media screen and (max-width: 988px)
 {
-    .contact{
+    .card-circle{
        display: grid;
        grid-template-columns: 1fr,1fr;
        grid-template-rows: 1fr,1fr;
@@ -136,5 +182,12 @@ h1{
     }
     .card{
         margin-bottom:10% ;
+    }
+}
+
+@media screen and (max-width: 988px)
+{
+    .galerie, .portraits{
+        flex-direction: column;
     }
 }
