@@ -1,61 +1,113 @@
-main {
-    display: grid;
-    grid-template-columns: .5fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100vw;
-    height: 279vh;
+html, body, .wrapper {
+	margin: 0;
+	padding: 0;
+	/* font-size: 18px; */
+	line-height: 1.9em;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; System Font Stack */
 }
 
-.left {
-    background-color: rgb(126, 181, 102,1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    clip-path: inset(0px -15px 0px 0px);
+.wrapper {
+	width: 100vw;
+	background: url(https://airbusdefenceandspace.com/wp-content/uploads/2016/09/earth-view-from-satellite-space-systems-cover.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 1;
 }
 
-.col-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.header, section {
+	width: 100%;
+	padding: 5%;
+	box-sizing: border-box;
+	position: relative;
+	/* z-index: 99; */
 }
 
-.col-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.sticky {
+	min-height: 100vh;
+	max-height: 100vh;
+	height: 100vh;
+	position: -webkit-sticky;
+	position: sticky;
+	/* top: 20px; */
+	z-index: 1;
 }
 
-.col-3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+section {
+	color: white;
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 20fr;
+	grid-template-rows: 1fr 1fr;
 }
 
-.row-1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.section--s1 {
+	background: rgb(126, 181, 102,1);
+	top: 7vh;
+	max-height: calc(100vh - 7vh);
+	grid-template-areas: 
+				"nomannee1 s1"
+				"nomannee1 s2";
 }
 
-.row-2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+.nomannee1 {
+	grid-area: nomannee1;
 }
 
-.row-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.s1 {
+	grid-area: s1;
+}
+
+.s2 {
+	grid-area: s2;
+}
+
+.section--s2 {
+	background: rgb(255,255,255,1);
+	color: black;
+	top: 7vh;
+	max-height: calc(100vh - 7vh);
+	grid-template-areas: 
+				"nomannee2 s3"
+				"nomannee2 s4";
+}
+
+.nomannee2 {
+	grid-area: nomannee2;
+}
+
+.s3 {
+	grid-area: s3;
+}
+
+.s4 {
+	grid-area: s4;
+}
+
+.section--s3 {
+	background: rgb(126, 181, 102,1);
+	top: 7vh;
+	max-height: calc(100vh - 7vh);
+	grid-template-areas: 
+				"nomannee3 s5"
+				"nomannee3 s6";
+}
+
+.nomannee3 {
+	grid-area: nomannee3;
+}
+
+.s5 {
+	grid-area: s5;
+}
+
+.s6 {
+	grid-area: s6;
+}
+
+.section--s4 {
+	background: rgb(48,48,54,1);
+	top: 7vh;
+	max-height: calc(100vh - 7vh);
 }
 
 h1 {
@@ -63,27 +115,22 @@ h1 {
     font-size: 3.1em;
 }
 
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
-    font-style: italic;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 25px;
+.nomannee1, .nomannee2, .nomannee3 {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .icon-battery {
     transform: rotate(90deg);
     padding: 30px;
+}
+
+
+
+@media (max-width: 868px) {
+	p {
+		font-size: small;
+		line-height: normal;
+	}
 }
