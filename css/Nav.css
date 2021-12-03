@@ -76,6 +76,8 @@ body{
   font-size: 20px;
   cursor: pointer;
   display: none;
+  background-color: transparent;
+  border: none;
 }
 
 /* Positionnement des boutons pour afficher et fermer la navbar sur petit écran */
@@ -102,7 +104,7 @@ body{
     min-height: 7vh;
     max-height: 7vh;
   }
-  div.icon.menu-btn {
+  .icon.menu-btn {
     margin-left: 50px;
   }
   .icon{

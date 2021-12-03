@@ -1,13 +1,14 @@
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = ()=>{
+const body = document.body
+const navbar = document.querySelector('.navbar')
+const menuBtn = document.querySelector('.menu-btn')
+
+function menuopen() {
+  body.classList.add("disabled");
   navbar.classList.add("show");
   menuBtn.classList.add("hide");
-  body.classList.add("disabled");
 }
-cancelBtn.onclick = ()=>{
+
+function menuclose() {
   body.classList.remove("disabled");
   navbar.classList.remove("show");
   menuBtn.classList.remove("hide");
