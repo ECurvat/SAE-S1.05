@@ -69,49 +69,60 @@
 				</div>
 				<div class="box2">
 					<div class="content_C etu2">
-						<img src="/images/pexels-buro-millennial-carre.jpg">
+						<img src="/images/Tom.jpg">
 					</div>
 					<p class="etu3T">Ancien étudiant</p>
 				</div>
 				<div class="box3">
 					<div class="content_C etu3">
-						<img src="/images/pexels-buro-millennial-carre.jpg">
+						<img src="/images/Laura.jpg">
 					</div>
 					<p class="etu3T">Ancien étudiant</p>
 				</div>
 				<div class="box4">
 					<div class="content_C etu4">
-						<img src="/images/pexels-buro-millennial-carre.jpg">
+						<img src="/images/Clarisse.jpg">
 					</div>
 					<p class="etu4T">Ancien étudiant</p>
 				</div>
 			</div>
 		</section>
-		<section class="formulaire">
-			<form action="" method="get">
-				<label for="prenom">Prénom : </label>
-				<input type="text" name="prenom" id="prenom" required>
+		<section class="formulaire-section">
+			<h1>Prendre contact avec un étudiant</h1>
+			<div class="formulaire-box">
+				<div class="formulaire">
+					<form action="" method="get">
+						<label for="prenom">Prénom : </label>
+						<input type="text" name="prenom" id="prenom" required>
+		
+						<label for="nom">Nom : </label>
+						<input type="text" name="nom" id="nom" required>
+		
+						<label for="admail">Adresse mail : </label>
+						<input type="email" name="admail" id="admail" required>
+						
+						<label for="nometu">Etudiant à contacter : </label>
+						<select name="nometu" size="1">
+							<option>Tom</option>
+							<option>Clarisse</option>
+							<option>Ethan</option>
+							<option>Laura</option>
+						</select>
 
-				<label for="nom">Nom : </label>
-				<input type="text" name="nom" id="nom" required>
+						<label for="message">Message à envoyer : </label>
+						<textarea required></textarea>
 
-				<label for="admail">Adresse mail : </label>
-				<input type="email" name="admail" id="admail" required>
-				Etudiant à contacter
-				<input type="radio" id="tom" name="personne" value="Tom">
-				<label for="Tom">Tom</label>
-
-				<input type="radio" id="clarisse" name="personne" value="Clarisse">
-				<label for="Clarisse">Clarisse</label>
-
-				<input type="radio" id="ethan" name="personne" value="Ethan">
-				<label for="Ethan">Ethan</label>
-
-				<input type="radio" id="laura" name="personne" value="Laura">
-				<label for="Laura">Laura</label>
-				<br>
-				<input type="submit" name="valider" id="valider">
-			</form>
+						<input type="submit" name="valider" id="valider">
+					</form>
+				</div>
+				<div class="description">
+					<h2>Une opportunité exceptionnelle</h2>
+					<p>Le système que nous avons mis en place permet à n'importe quel visiteur de ce site internet de prendre contact avec d'anciens et actuels étudiants.</p>
+					<p></p>
+				</div>
+			</div>
+			
+			
 		</section>
 		<section class="Qui">
 			<h1>Qui sommes-nous ?</h1>
@@ -153,9 +164,9 @@
 		</section>
 	</main>
 	<footer-info></footer-info>
-	<script src="js/menu.js"></script>
 	<script src="/js/componentFOOTER.js"></script>
-	<script src="/js/componentNAV.js"></script>
+    <script src="/js/componentNAV.js"></script>
+    <script src="/js/menu.js"></script>
 </body>
 
 </html>
