@@ -1,12 +1,25 @@
 html, body, .wrapper {
 	margin: 0;
 	padding: 0;
+	/* font-size: 18px; */
 	line-height: 1.9em;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; System Font Stack */
 }
 
 .wrapper {
 	width: 100vw;
+	background: url(https://airbusdefenceandspace.com/wp-content/uploads/2016/09/earth-view-from-satellite-space-systems-cover.jpg);
+	background-size: cover;
+	background-attachment: fixed;
 	z-index: 1;
+}
+
+.header, .sticky {
+	width: 100%;
+	padding: 5%;
+	box-sizing: border-box;
+	position: relative;
+	/* z-index: 99; */
 }
 
 .sticky {
@@ -19,20 +32,15 @@ html, body, .wrapper {
 	z-index: 1;
 }
 
-.wrapper section {
-	padding: 5%;
-	box-sizing: border-box;
-	position: relative;
+.sticky {
 	color: white;
 	display: grid;
 	width: 100%;
 	grid-template-columns: 1fr 20fr;
 	grid-template-rows: 1fr 1fr;
-	color: black;
-	top: 0;
 }
 
-.section-s1 {
+.section--s1 {
 	background: rgb(126, 181, 102,1);
 	top: 7vh;
 	max-height: calc(100vh - 7vh);
@@ -53,7 +61,7 @@ html, body, .wrapper {
 	grid-area: s2;
 }
 
-.section-s2 {
+.section--s2 {
 	background: rgb(255,255,255,1);
 	color: black;
 	top: 7vh;
@@ -75,7 +83,7 @@ html, body, .wrapper {
 	grid-area: s4;
 }
 
-.section-s3 {
+.section--s3 {
 	background: rgb(126, 181, 102,1);
 	top: 7vh;
 	max-height: calc(100vh - 7vh);
@@ -96,6 +104,12 @@ html, body, .wrapper {
 	grid-area: s6;
 }
 
+.section--s4 {
+	background: rgb(48,48,54,1);
+	top: 7vh;
+	max-height: calc(100vh - 7vh);
+}
+
 h1 {
     writing-mode: vertical-lr;
     font-size: 3.1em;
@@ -112,9 +126,27 @@ h1 {
     padding: 30px;
 }
 
+
+
 @media (max-width: 868px) {
 	p {
 		font-size: small;
 		line-height: normal;
 	}
 }
+
+@media screen and (min-width: 1900px) {
+	.wrapper p {
+	  font-size: xx-large;
+	  line-height: normal;
+	}
+	.wrapper h1 {
+		font-size: 5em;
+	}
+	.wrapper h2 {
+		font-size: 3em;
+	}
+	.wrapper h3 {
+		font-size: 2em;
+	}
+  }
