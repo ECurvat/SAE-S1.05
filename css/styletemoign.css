@@ -45,6 +45,7 @@ h1{
     width: auto;
     height: auto;
     text-align: center;
+    padding-top: 30px;
 }
 
 .card .content .picture img{
