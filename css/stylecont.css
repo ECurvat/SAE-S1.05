@@ -7,9 +7,19 @@
     scroll-snap-type: x mandatory;
 }
 
-.wrapper::-webkit-scrollbar {
-    width: 0;
+/* Changer l'apparence de la scrollbar */
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 1px;
+    height: 5px;
 }
+
+/* Obligé sinon la scrollbar est cachée après un certain temps */
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
 
 .wrapper .item {
     min-width: 20%;
@@ -18,7 +28,6 @@
     scroll-snap-align: start;
     padding: 25px;
     margin: 10px;
-    box-shadow: 0 5px 5px -5px #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
