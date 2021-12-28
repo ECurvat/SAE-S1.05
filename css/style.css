@@ -60,8 +60,72 @@ A FAIRE
     color: white;
 }
 
-.acc-3 {
-    background-color: rgb(126, 181, 102,1);
+.acc-3-acc-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgb(126, 181, 102,1) ;
+    padding: 5%;
+}
+
+
+.actu{
+    display: grid;
+    grid-template-columns: repeat(2,15em);
+    gap: 40px;
+
+}
+
+.titre {
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.titre h1{
+    font-size:5em;
+}
+
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale();
+
+}
+
+.box{
+    position: relative;
+    transition: background 0.3s ease-out;
+}
+
+.box h2{
+    position: absolute;
+    font-size:x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: rgb(26, 26, 26,0.80);
+    opacity: 0;
+    bottom: 25%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box:hover img{
+    filter: none;
+    transform: scale(1.03);
+    transition: 0.4s;
+
+
+}
+
+.box:hover h2{
+    transform: scale(1.01);
+    transition: 0.4s;
+    opacity:1 ;
+    
 }
 
 
@@ -75,9 +139,9 @@ A FAIRE
 }
 
 .img-para1 {
-    background-image: url("https://images.pexels.com/photos/572688/pexels-photo-572688.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-image: url("/images/Campus-de-la-Doua.jpg");
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
