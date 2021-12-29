@@ -105,8 +105,9 @@ main section {
 }
 
 .content_C img:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
 }
+
 
 /* ------------Qui sommes nous------------ */
 

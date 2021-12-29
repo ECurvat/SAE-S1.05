@@ -13,7 +13,7 @@ class FOOTER extends HTMLElement{
                 <input type="email" placeholder="Email"><button><i class="fas fa-plus"></i></button>
             </section>
             <section class="foo-2">
-                <a>Copyright</a>
+                <a>Copyright 2021 - 2022</a>
                 <a href="">Mentions légales</a>
                 <a href="">Politique de confidentialité</a>
             </section>
