@@ -2,142 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* Mise en place de la grille pour les items de la page d'accueil*/
-.acc {
-    display: flex;
-    flex-direction: column;
-}
 
-/* On positionne les éléments dans la grille */
-.acc-item {
-    padding: 5%;
-    font-size: 1.1em;
-}
-
-.acc-1 {
-    background-color: rgb(255,255,255,1);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-    letter-spacing: .5px;
-}
-
-.portraits {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.galerie {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-}
-
-.item {
-    text-align: center;
-    padding: 20px;
-}
-
-.portraits > div {
-    width: 100%;
-}
-
-.portraits > div > img {
-    width: 25%;
-    filter: grayscale(100%);
-    border-radius: 50%;
-}
-
-.acc-2 {
-    background-color: rgb(48,48,54,1);
-    color: white;
-}
-
-.acc-3-acc-item{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color:rgb(126, 181, 102,1) ;
-    padding: 5%;
-}
-
-
-.actu{
-    display: grid;
-    grid-template-columns: repeat(2,15em);
-    gap: 40px;
-
-}
-
-.titre {
-    color: white;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-serif;
-    
-}
-.titre h1{
-    font-size:5em;
-}
-
-
-.box img{
-    width: 100%;
-    border-radius: 10px;
-    filter: grayscale();
-
-}
-
-.box{
-    position: relative;
-    transition: background 0.3s ease-out;
-}
-
-.box h2{
-    position: absolute;
-    font-size:x-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(255, 255, 255);
-    background-color: rgb(26, 26, 26,0.80);
-    opacity: 0;
-    bottom: 25%;
-    text-align: center;
-    padding: 10px; 
-    border-radius: 10px;
-}
-
-.box:hover img{
-    filter: none;
-    transform: scale(1.03);
-    transition: 0.4s;
-}
-
-.box:hover h2{
-    transform: scale(1.01);
-    transition: 0.4s;
-    opacity:1 ;    
-}
-
-
-.campus {
-    width: 100%;
-    height: 105vh;
-    top: 3vh;
-    position: sticky; 
-    z-index: -1;
-    object-fit: cover;
-}
-
-.img-para1 {
-    background-image: url("/images/Campus-de-la-Doua.jpg");
-    width: 100%;
-    height: 30vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
+/* ------------Titre------------*/
 .bvn {
     background:url("../images/doua1.jpg") center;
     background-attachment: fixed;
@@ -162,12 +28,132 @@
     font-family: 'Bebas Neue', cursive;
 }
 
-.tcenter{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+/* ------------Mise en page de chaque partie------------ */
+.acc-item {
+    padding: 5%;
 }
 
+/* ------------Description du BUT------------ */
+.acc-1 {
+    background-color: rgb(255,255,255,1);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+
+/* ------------Trois buts du site------------ */
+
+.acc-2 {
+    background-color: rgb(48,48,54,1);
+    color: white;
+}
+.galerie {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.galerie figure {
+    text-align: center;
+    padding: 20px;
+    transition: 0.5s 0s ease-in-out;
+}
+
+figure button {
+    border: 1px white solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+figure button:hover {
+    cursor: grab;
+}
+
+/* ------------Actualités------------ */
+
+.acc-3{
+    background-color:rgb(126, 181, 102,1);
+}
+
+.actualites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid-actu{
+    display: grid;
+    grid-template-columns: repeat(2,15em);
+    gap: 40px;
+
+}
+
+.titre {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+.titre h1{
+    font-size:5em;
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale();
+
+}
+
+.box{
+    position: relative;
+}
+
+.box h2{
+    position: absolute;
+    width: calc(100% - 20px);
+    color:rgb(255, 255, 255);
+    background-color: rgb(26, 26, 26,0.80);
+    opacity: 0;
+    bottom: 20%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box:hover img{
+    filter: none;
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+}
+
+.box:hover h2{
+    transform: scale(1.01);
+    transition: 0.5s ease-in-out;
+    opacity: 1;    
+}
+
+.img-para1 {
+    background-image: url("/images/Campus-de-la-Doua.jpg");
+    width: 100%;
+    height: 30vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ------------Media queries------------ */
 @media screen and (max-width: 988px)
 {
     .galerie, .portraits{
