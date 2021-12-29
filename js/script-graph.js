@@ -10,10 +10,13 @@ function drawChart() {
     ]);
 
     var options = {
-        // title: 'Après la formation',
+        // tooltip:{
+        //     textStyle:{color:'black'}
+        // },
         with:'100%',
         height:'100%',
-        backgroundColor: 'transparent'
+        backgroundColor: 'transparent',
+        
     };
     
 
