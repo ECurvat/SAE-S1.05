@@ -75,7 +75,7 @@ figure:hover {
 }
 
 figure button:hover {
-    cursor: grab;
+    cursor: pointer;
 }
 
 /* ------------Actualités------------ */
@@ -112,7 +112,7 @@ figure button:hover {
 .box img{
     width: 100%;
     border-radius: 10px;
-    filter: grayscale();
+    filter: grayscale(100%);
 
 }
 
