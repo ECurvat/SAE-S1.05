@@ -1,37 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 h1{
-    font-size: xxx-large;
-    text-align: center;
-    color: rgb(126, 181, 102,1);
+    font-size: xx-large;
+    /* color: rgb(126, 181, 102,1); */
     margin: 20px;
 }
 
-
-.poursuite{
-    display: flex;
-    flex-direction: column;
+main section {
+    padding: 5%;
 }
-/* ---------------------pousuite + card----------------------- */
-.top{
+
+/* ------------Poursuites------------ */
+.top {
     display: flex;
     background-color:#ffff;
     justify-content: space-evenly;
     padding: 25px;
 }
 
-.bot{
-    background-color: rgb(126, 181, 102,1);
-    
-}
-
-.card{
+.card {
     height: 500px;
     width: 400px;
     background-color: rgba(126, 181, 102,1 );
@@ -41,21 +29,21 @@ h1{
     margin: 5px;
 }
 
-.card .content .picture{
+.card .content .picture {
     width: auto;
     height: auto;
     text-align: center;
     padding-top: 30px;
 }
 
-.card .content .picture img{
+.card .content .picture img {
     width: 90%;
     height: auto;
     border-radius: 10px;
     filter: grayscale(100%);
 }
 
-.card .content{
+.card .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,34 +53,33 @@ h1{
     justify-content: space-evenly;
 }
 
-.card .content h1,.card .content p{
+.card .content h1,.card .content p {
     margin:0px;
     color: #ffff;
     text-align: center;
 }
 
-.card p{
+.card p {
     padding: 10px;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.03);
 }
 
 
-/* --------------------contact + card-cicrle------------------------ */
-.contact{
+/* ------------Liste des étudiants------------ */
+.contact {
     background-color: rgb(48,48,54);
 }
 
-.card-circle{
+.card-circle {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* padding: 25px;    */
 }
 
-.content_C img{
+.content_C img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -100,8 +87,11 @@ h1{
     transition: 0.3s;
 }
 
-.contact h1{
-    color: #ffff;
+.contact h1 {
+    color: white;
+}
+
+.card-circle h1 {
     font-size: x-large;
     font-weight: bold;
     text-align: center;
@@ -114,20 +104,20 @@ h1{
     text-align: center;
 }
 
-.content_C img:hover{
-    transform: scale(1.03);
+.content_C img:hover {
+    transform: scale(1.1);
 }
 
-/* -------------------qui somme nous---------------- */
 
-.Qui {
+/* ------------Qui sommes nous------------ */
+
+.auteurs {
     background-color: rgb(126, 181, 102,1);
     color: white;
-    padding: 5%;
     text-align: center;
 }
 
-.Qui h1{
+.auteurs h1 {
     color: white;
 }
 
@@ -135,11 +125,6 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.Qui-item {
-    padding: 5%;
-    font-size: 1.1em;
 }
 
 .portraits > div {
@@ -152,25 +137,14 @@ h1{
     border-radius: 50%;
 }
 
-.ELL{
+.personne {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.FRA{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* -------------------Formulaire -------------------*/
-.formulaire-section {
-	padding: 5%;
-	
-}
+/* ------------Formulaire------------ */
 
 .formulaire-box {
 	display: grid;
@@ -199,7 +173,7 @@ textarea {
 	resize: vertical;
 }
 
-input[type="text"], input[type="email"], select, textarea {
+main input[type="text"], main input[type="email"], select, textarea {
 	padding: 5px;
 	border: none;
 	height: 15px;
@@ -212,13 +186,13 @@ label {
 	font-size: large;
 }
 
-/* --------------media query--------------- */
+/* ------------Media Queries------------ */
 @media screen and (max-width: 1250px)
 {
     .card-circle{
        display: grid;
-       grid-template-columns: 1fr,1fr;
-       grid-template-rows: 1fr,1fr;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
        grid-template-areas: 
         "box1 box2"
         "box3 box4";

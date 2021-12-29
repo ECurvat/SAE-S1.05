@@ -14,16 +14,16 @@
     <nav-bar></nav-bar>
     <main>
         <section class="poursuite">
-            <h1>Poursuite</h1>
-            <section class="top">
+            <h1>Trois poursuites principales</h1>
+            <div class="top">
                 <a href="#">
                     <div class="card">
                         <div class="content">
                             <div class="picture">
-                                <img src="/images/poursuite-mas.jpg">
+                                <img src="/images/poursuite-mas.jpg" alt="Amphitéâtre d'une université vide">
                             </div>
                             <h1>Vers un Master</h1>
-                            <P>Donnez un vrai coup de pouce à votre CV en décrochant un Master après votre BUT.</P>
+                            <p>Donnez un vrai coup de pouce à votre CV en décrochant un Master après votre BUT.</p>
                         </div>
                     </div>
                 </a>
@@ -31,10 +31,10 @@
                     <div class="card">
                         <div class="content">
                             <div class="picture">
-                                <img src="/images/poursuite-ing.jpeg">
+                                <img src="/images/poursuite-ing.jpeg" alt="Deux stylos posés sur une feuille de papier">
                             </div>
                             <h1>Vers l'Ingénierie</h1>
-                            <P>Acquérez de vraies compétences techniques, pratiques et théoriques pour booster votre entrée dans la vie active.</P>
+                            <p>Acquérez de vraies compétences techniques, pratiques et théoriques pour booster votre entrée dans la vie active.</p>
                         </div>
                     </div>
                 </a>
@@ -42,119 +42,91 @@
                     <div class="card">
                         <div class="content">
                             <div class="picture">
-                                <img src="/images/poursuite-pro.jpg">
+                                <img src="/images/poursuite-pro.jpg" alt="Un ordinateur sur un bureau">
                             </div>
-                            <h1>Insertion Pro</h1>
-                            <P>Ne perdez plus de temps et démarrez directement un travail qui vous correspond, mettez vos acquis en pratique.</P>
+                            <h1>Insertion Professionnelle</h1>
+                            <p>Ne perdez plus de temps et démarrez directement un travail qui vous correspond, mettez vos acquis en pratique.</p>
                         </div>
                     </div>
                 </a>
-            </section>
-            <section class="bot"></section>
+            </div>
         </section>
         <section class="contact">
             <h1>Contact</h1>
             <div class=card-circle>
                 <div class="box1">
                     <div class="content_C">
-                        <img src="/images/Ethan.jpg">
+                        <img src="/images/Ethan.jpg" alt="Etudiant qui travaille sur un ordinateur">
                     </div>
                     <h1>Ethan</h1>
                     <p>En BUT 2</p>
                 </div>
                 <div class="box2">
                     <div class="content_C">
-                        <img src="/images/Laura.jpg">
+                        <img src="/images/Laura.jpg" alt="Etudiante qui souries">
                     </div>
                     <h1>Laura</h1>
                     <p>En école d'ingénieur</p>
                 </div>
                 <div class="box3">
                     <div class="content_C">
-                        <img src="/images/Tom.jpg">
+                        <img src="/images/Tom.jpg" alt="Etudiant avec un casque qui lit">
                     </div>
                     <h1>Tom</h1>
                     <p>En M2</p>
                 </div>
                 <div class="box4">
                     <div class="content_C">
-                        <img src="/images/Clarisse.jpg">
+                        <img src="/images/Clarisse.jpg" alt="Etudiante sur son téléphone">
                     </div>
                     <h1>Clarisse</h1>
                     <p>En CDI</p>
                 </div>
             </div>
         </section>
-        <section class="formulaire-section">
+        <section>
 			<h1>Prendre contact avec un étudiant</h1>
 			<div class="formulaire-box">
 				<div class="formulaire">
-					<form action="" method="get">
+					<form action="/envoieform.php" method="get">
 						<label for="prenom">Prénom : </label>
 						<input type="text" name="prenom" id="prenom" required>
-		
 						<label for="nom">Nom : </label>
 						<input type="text" name="nom" id="nom" required>
-		
 						<label for="admail">Adresse mail : </label>
 						<input type="email" name="admail" id="admail" required>
-						
 						<label for="nometu">Etudiant à contacter : </label>
-						<select name="nometu" size="1">
+						<select name="nometu" id="nometu" size="1">
 							<option>Tom</option>
 							<option>Clarisse</option>
 							<option>Ethan</option>
 							<option>Laura</option>
 						</select>
-
 						<label for="message">Message à envoyer : </label>
-						<textarea required></textarea>
-
-						<input type="submit" name="valider" id="valider">
+						<textarea required name="message" id="message"></textarea>
+						<input type="submit" name="envoyer" id="envoyer">
 					</form>
 				</div>
 				<div class="description">
 					<h2>Une opportunité exceptionnelle</h2>
 					<p>Le système que nous avons mis en place permet à n'importe quel visiteur de ce site internet de prendre contact avec d'anciens et actuels étudiants.</p>
-					<p></p>
+                    <p>Ce système de parrainage a déjà fais ses preuves ces dernières années et il est autant bénéfique pour vous que pour nous. Vous découvrez la formation sous un nouvel angle et cela vous permet de savoir si c'est vraiment ce que vous souhaitez faire dans la vie.</p>
 				</div>
 			</div>
 		</section>
-        <section class="Qui">
+        <section class="auteurs">
             <h1>Qui sommes-nous ?</h1>
-            <p>
-                Anciens étudiants à l’IUT Lyon 4, nous avons tous les deux suivi un parcours réalisation d'applications
-                en deuxième année. L’IUT nous a contacté après validation de notre sixième semestre avant notre départ
-                de l’IUT pour réaliser ce site et aider les futurs étudiants, entreprises et enseignants à comprendre la
-                réforme du BUT.
-            </p>
-            <div class="portraits tcenter">
-                <div class="FRA">
-                    <img class="photo" src="images/img_avatar.png">
+            <p>Anciens étudiants à l’IUT Lyon 4, nous avons tous les deux suivi un parcours réalisation d'applications en deuxième année. L’IUT nous a contacté après validation de notre sixième semestre avant notre départ de l’IUT pour réaliser ce site et aider les futurs étudiants, entreprises et enseignants à comprendre la réforme du BUT.</p>
+            <div class="portraits">
+                <div class="personne">
+                    <img src="images/img_avatar.png" alt="Dessin représentant une perosonne">
                     <h2>François Graux</h2>
-                    <p>Pellentesque ac tellus accumsan, ornare lorem a, hendrerit leo. Donec vel egestas metus.
-                        Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem
-                        eu,
-                        dignissim molestie ante. Fusce quis tristique urna, et lobortis erat. Aliquam eget cursus velit.
-                        Pellentesque ac tellus accumsan, ornare lorem a, hendrerit leo. Donec vel egestas metus.
-                        Nullam maximus a odio nec ultrices. Integer ac bibendum lectus. In dui nisi, dignissim nec lorem
-                        eu,
-                        dignissim molestie ante. Fusce quis tristique urna, et lobortis erat. Aliquam eget cursus velit
-                    </p>
+                    <p>Suite à l’obtention de mon baccalauréat général option mathématiques et sciences de l’informatique en 2026, je me suis lancé dans mes études supérieures à L’IUT de Lyon 4 qui était mon 1er choix de poursuite d’études. Après le BUT 1, j'ai choisi le parcours réalisation d’application pour la suite. J’ai effectué mon stage chez Ubisoft, dans leur antenne de Lyon. En ce qui concerne la troisième année, j’ai choisi l’alternance pour découvrir plus en détail le monde du travail. Cependant, après l’obtention de mon BUT, j’ai choisi de m’orienter vers un Master en informatique pour acquérir plus de connaissances.</p>
                 </div>
-                <div class="ELL">
-                    <img class="photo" src="images/img_avatar.png">
+                <div class="personne">
+                    <img src="images/img_avatar.png" alt="Dessin représentant une perosonne">
                     <h2>Elliot Curvat</h2>
-                    <p>
-                        Après l'obtention de mon baccalauréat scientifique spécialité SVT en 2025, j’ai décidé de partir
-                        une année à l’étranger puis de commencer mes études supérieures en intégrant l’IUT Lyon 4 à la
-                        rentrée 2026 suite à l’acceptation de mon vœu Parcoursup. Ma première année s’est bien passée,
-                        j’ai donc décidé de poursuivre la formation en me spécialisant dans la réalisation
-                        d’applications au cours de ma deuxième année. J’ai effectué mon stage chez ???. Enfin, j’ai
-                        choisi de basculer sur l’alternance en troisième année chez ???. Souhaitant rentrer dans la vie
-                        active le plus tôt possible, j’ai fait le choix de m’arrêter au niveau licence après validation
-                        de mon BUT Informatique. J’ai pu trouver un emploi en deux mois environ.
-                    </p>
+                    <p>Après l'obtention de mon baccalauréat scientifique spécialité SVT en 2025, j’ai décidé de partir une année à l’étranger puis de commencer mes études supérieures en intégrant l’IUT Lyon 4 à la rentrée 2026 j’ai donc décidé de poursuivre la formation en me spécialisant dans la réalisation d’applications au cours de ma deuxième année. J’ai effectué mon stage chez X. Enfin, j’ai choisi de basculer sur active le plus tôt possible, j’ai fait le choix de m’arrêter au niveau licence après validation de mon BUT Informatique. J’ai pu trouver un emploi en deux mois environ.</p>
                 </div>
             </div>
         </section>

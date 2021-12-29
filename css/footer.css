@@ -46,6 +46,26 @@ a{
     font-size: xx-large;
 }
 
+.reseau i:nth-child(1):hover {
+    color: #E4405F;
+}
+
+.reseau i:nth-child(2):hover {
+    color: #0A66C2;
+}
+
+.reseau i:nth-child(3):hover {
+    color: #1DA1F2;
+}
+
+.reseau i:nth-child(4):hover {
+    color: #1877F2;
+}
+
+.reseau i:hover {
+    animation: bump .5s ease-in-out;
+}
+
 @media screen and (max-width: 988px)
 {
     footer{
@@ -64,5 +84,14 @@ a{
     }
 }
 
-
-
+@keyframes bump {
+    33% {
+      transform: scale(1.3);
+    }
+    66% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.0);
+    }
+  }
