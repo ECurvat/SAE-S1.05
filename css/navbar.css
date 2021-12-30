@@ -87,7 +87,7 @@ body{
 }
 
 /* Ce qui est fait quand la largeur d'écran est inferieure à 868px */
-@media (max-width: 868px) {
+@media (orientation : portrait), (max-width: 930px) {
   body.disabled{
     overflow: hidden;
   }
