@@ -8,7 +8,7 @@ class Navbar extends HTMLElement{
                     IUT Lyon 4 — BUT Informatique
                 </div>
                 <ul class="menu-list">
-                    <button class="icon cancel-btn" onclick="menuclose()">
+                    <button aria-label="Fermer le menu" class="icon cancel-btn" onclick="menuclose()">
                         <i class="fas fa-times"></i>
                     </button>
                     <li><a href="accueil.html">Accueil</a></li>
@@ -16,7 +16,7 @@ class Navbar extends HTMLElement{
                     <li><a href="contenu.html">Contenu</a></li>
                     <li><a href="temoignages.html">Témoignages</a></li>
                 </ul>
-                <button class="icon menu-btn" onclick="menuopen()">
+                <button aria-label="Ouvrir le menu" class="icon menu-btn" onclick="menuopen()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
