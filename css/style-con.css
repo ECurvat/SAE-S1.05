@@ -79,6 +79,12 @@
 
 h2 {
     margin: 0;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.graph {
+    width: 100%;
 }
 
 #_ABSTRACT_RENDERER_ID_0 + g >text{

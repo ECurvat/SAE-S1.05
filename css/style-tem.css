@@ -186,7 +186,7 @@ label {
 }
 
 /* ------------Media Queries------------ */
-@media (orientation : portrait), (max-width: 930px)
+@media (orientation : portrait), (max-width: 1250px)
 {
     .card-circle{
        display: grid;
@@ -220,4 +220,7 @@ label {
     .galerie, .portraits{
         flex-direction: column;
     }
+    .content_C img {
+        width: 100px;
+        height: 100px;
 }
