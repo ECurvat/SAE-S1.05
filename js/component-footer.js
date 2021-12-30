@@ -4,13 +4,15 @@ class FOOTER extends HTMLElement{
 
         this.innerHTML=`<script src="https://kit.fontawesome.com/c133ee1e05.js" crossorigin="anonymous"></script>
         <footer>
-        <img src="images/logoiut.png" class="logof">
+        <img src="images/logoiut.png" class="logof" alt="Logo de l'IUT">
         <section class="info">
             <section class="foo-1">
                 <h4>Newsletter</h4>
                 <p>Nous vous tiendrons au courant des les informations concernant le B.U.T et de la vie sur le campus
                 </p>
-                <input type="email" placeholder="Email"><button><i class="fas fa-plus"></i></button>
+                <form action="/envoieform.php" method="POST">
+                    <input type="email" required placeholder="Email"><button type="submit" aria-label="Confirmer l'inscription"><i class="fas fa-plus"></i></button>
+                </form>
             </section>
             <section class="foo-2">
                 <a>Copyright 2021 - 2022</a>
