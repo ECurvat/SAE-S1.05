@@ -17,9 +17,9 @@ function drawAdmChart() {
 	data.addColumn('string', 'Filieres');
 	data.addColumn('number', 'Pourcentage');
 	data.addRows([
-		['Général', 65],
+		['Générale', 65],
 		['Technologique', 50],
-		['Professionnel', 10]
+		['Professionnelle', 10]
 	]);
 
 	// Options d'admissions
