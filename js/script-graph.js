@@ -1,26 +1,85 @@
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
+google.charts.load('current', { 'packages': ['corechart'] });
 
-    var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Poursuite',11],
-        ['Insertion',5],
-        
-    ]);
+// Appel du dessin du graphique des admissions
+google.charts.setOnLoadCallback(drawAdmChart);
 
-    var options = {
-        // tooltip:{
-        //     textStyle:{color:'black'}
-        // },
-        with:'100%',
-        height:'100%',
-        backgroundColor: 'transparent',
-        
-    };
-    
+// Appel du dessin du graphique des filieres
+google.charts.setOnLoadCallback(drawFilChart);
 
-    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+// Appel du dessin du graphique des poursuites
+google.charts.setOnLoadCallback(drawPouChart);
 
-        chart.draw(data, options);
-    }
+// Admissions
+function drawAdmChart() {
+
+	// Données d'admissions
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Filieres');
+	data.addColumn('number', 'Pourcentage');
+	data.addRows([
+		['Général', 65],
+		['Technologique', 50],
+		['Professionnel', 10]
+	]);
+
+	// Options d'admissions
+	var options = {
+		width: '100%',
+		backgroundColor: 'transparent',
+		colors: ['#BDC3C7', '#5a5e6b', '#27AE60']
+	};
+
+	// Dessin d'admissions
+	var chart = new google.visualization.PieChart(document.getElementById('Adm_chart_div'));
+	chart.draw(data, options);
+}
+
+// Filieres
+function drawFilChart() {
+
+	// Données des filieres
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Filieres');
+	data.addColumn('number', 'Pourcentage');
+	data.addRows([
+		['Parcours A', 85],
+		['Parcours B', 10],
+		['Parcours C', 30]
+	]);
+
+	// Options des filieres
+	var options = {
+		width: '100%',
+		backgroundColor: 'transparent',
+		colors: ['#BDC3C7', '#5a5e6b', '#27AE60']
+	};
+
+	// Dessin des filieres
+	var chart = new google.visualization.PieChart(document.getElementById('Fil_chart_div'));
+	chart.draw(data, options);
+}
+
+// Poursuites
+function drawPouChart() {
+
+	// Données des poursuites
+	var data = new google.visualization.DataTable();
+	data.addColumn('string', 'Poursuites');
+	data.addColumn('number', 'Pourcentage');
+	data.addRows([
+		['Professionnelle', 40],
+		['Universitaire', 38],
+		['École privée/publique', 47],
+	]);
+
+	// Options des poursuites
+	var options = {
+		width: '100%',
+		backgroundColor: 'transparent',
+		colors: ['#BDC3C7', '#5a5e6b', '#27AE60']
+	};
+
+	// Dessin des filieres
+	var chart = new google.visualization.PieChart(document.getElementById('Pou_chart_div'));
+	chart.draw(data, options);
+}
