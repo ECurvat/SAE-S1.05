@@ -21,10 +21,10 @@ class FOOTER extends HTMLElement{
             </section>
         </section>
         <section class="reseau">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-square"></i>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
         </section>
         </footer>`;
     }

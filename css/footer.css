@@ -46,23 +46,23 @@ a{
     font-size: xx-large;
 }
 
-.reseau i:nth-child(1):hover {
+.reseau a:nth-child(1):hover {
     color: #E4405F;
 }
 
-.reseau i:nth-child(2):hover {
+.reseau a:nth-child(2):hover {
     color: #0A66C2;
 }
 
-.reseau i:nth-child(3):hover {
+.reseau a:nth-child(3):hover {
     color: #1DA1F2;
 }
 
-.reseau i:nth-child(4):hover {
+.reseau a:nth-child(4):hover {
     color: #1877F2;
 }
 
-.reseau i:hover {
+.reseau a:hover {
     animation: bump .5s ease-in-out;
 }
 
