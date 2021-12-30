@@ -151,7 +151,7 @@ main section {
 	grid-template-columns: 1fr 1fr;
 }
 
-form {
+main form {
 	width: 75%;
 	display: flex;
 	flex-direction: column;
