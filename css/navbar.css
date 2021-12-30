@@ -142,8 +142,8 @@ body{
     margin-left: 0px;
   }
 }
-@media (max-width: 380px) {
-  .navbar .logo a{
-    font-size: 27px;
+@media (max-width: 500px) {
+  .navbar .logo {
+    font-size: 1em;
   }
 }

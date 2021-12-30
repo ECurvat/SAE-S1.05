@@ -118,25 +118,32 @@
     padding: 30px;
 }
 
-@media (max-width: 868px) {
+@media (orientation : portrait), (max-width: 930px) {
 	.wrapper p {
 		font-size: small;
 		line-height: normal;
 	}
-}
-
-@media screen and (min-width: 1900px) {
-	.wrapper p {
-	  font-size: xx-large;
-	  line-height: normal;
+	.section--s1 {
+		display: flex;
+		flex-direction: column;
+		top: 3vh;
+	}
+	.section--s2 {
+		display: flex;
+		flex-direction: column;
+		top: 3vh;
+	}
+	.section--s3 {
+		display: flex;
+		flex-direction: column;
 	}
 	.wrapper h1 {
-		font-size: 5em;
+		writing-mode: horizontal-tb;
+		font-size: 1.75em;
+		margin-top: 0;
 	}
-	.wrapper h2 {
-		font-size: 3em;
+	.icon-battery {
+		transform: rotate(0deg);
+		padding: 5px;
 	}
-	.wrapper h3 {
-		font-size: 2em;
-	}
-  }
+}
