@@ -153,7 +153,7 @@ figure button:hover {
 }
 
 /* ------------Media queries------------ */
-@media screen and (max-width: 988px)
+@media (orientation : portrait), (max-width: 930px)
 {
     .galerie, .portraits{
         flex-direction: column;
