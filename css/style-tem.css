@@ -20,7 +20,7 @@ main section {
 
 .card {
     height: 500px;
-    width: 400px;
+    width: min(400px , 33%);
     background-color: rgba(126, 181, 102,1 );
     backdrop-filter: blur(5px);
     border-radius: 15px;
@@ -181,6 +181,10 @@ main input[type="text"], main input[type="email"], select, textarea {
 	border-radius: 5px;
 }
 
+select {
+    height: 25px;
+}
+
 label {
 	font-size: large;
 }
@@ -223,4 +227,23 @@ label {
     .content_C img {
         width: 100px;
         height: 100px;
+    }
+    .card {
+        width: min(400px , 90%);
+    }
+    .formulaire-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (orientation : portrait), (max-width: 500px)
+{
+.card-circle{
+    display: flex;
+    flex-direction: column;
+     justify-items: center;
+     justify-content: space-evenly;
+ }
 }
