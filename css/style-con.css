@@ -83,11 +83,15 @@
 }
 
 /* ---------------------------------------------------- */
-@media (max-width: 868px) {
+@media (orientation : portrait), (max-width: 930px) 
+{
     .wrapper {
         flex-direction: column;
     }
     #Adm_chart_div:hover, #Fil_chart_div:hover, #Pou_chart_div:hover {
         transform: none;
+    }
+    #Adm_chart_div, #Fil_chart_div, #Pou_chart_div {
+        transform: scale(0.8);
     }
 }
