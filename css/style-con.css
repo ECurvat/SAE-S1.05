@@ -77,6 +77,10 @@
     text-align: center;
 }
 
+h2 {
+    margin: 0;
+}
+
 #_ABSTRACT_RENDERER_ID_0 + g >text{
     
     fill: black;
@@ -93,10 +97,5 @@
     }
     #Adm_chart_div, #Fil_chart_div, #Pou_chart_div {
         transform: scale(0.8);
-        overflow: hidden;
-    }
-    .graph-section h2{
-        font-size: 0.9em;
-        text-align: center;
     }
 }
