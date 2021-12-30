@@ -21,8 +21,7 @@ body{
 .navbar{
   position: sticky;
   top: 0;
-  min-height: 7vh;
-  max-height: 7vh;
+  height:auto;
   width: 100%;
   z-index: 2;
   background-color: rgb(48,48,54,1);
@@ -101,8 +100,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 7vh;
-    max-height: 7vh;
   }
   .icon.menu-btn {
     margin-left: 50px;

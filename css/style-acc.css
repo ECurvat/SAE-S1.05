@@ -86,7 +86,7 @@ figure button:hover {
 
 .actualites {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -102,7 +102,6 @@ figure button:hover {
     color: white;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
-    
 }
 
 .titre h1{
@@ -113,7 +112,7 @@ figure button:hover {
     width: 100%;
     border-radius: 10px;
     filter: grayscale(100%);
-
+    transition:all 0.5s;
 }
 
 .box{
@@ -130,17 +129,17 @@ figure button:hover {
     text-align: center;
     padding: 10px;
     border-radius: 10px;
+    transition:all 0.5s;
+    
 }
 
 .box:hover img{
     filter: none;
     transform: scale(1.03);
-    transition: 0.5s ease-in-out;
 }
 
 .box:hover h2{
     transform: scale(1.01);
-    transition: 0.5s ease-in-out;
     opacity: 1;    
 }
 
@@ -158,5 +157,26 @@ figure button:hover {
 {
     .galerie, .portraits{
         flex-direction: column;
+    }
+    
+    .actualites{
+        flex-direction: column-reverse;
+    }
+
+    .grid-actu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: center;        
+    }
+    .grid-actu .box{
+        width: 10em;
+    }
+    .msg{
+        font-size: 1.75em;
+    }
+
+    .titre h1{
+        font-size: 3em;
     }
 }
