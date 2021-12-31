@@ -143,7 +143,7 @@ figure button:hover {
 }
 
 .img-para1 {
-    background-image: url("/images/Campus-de-la-Doua.jpg");
+    background-image: url("../images/Campus-de-la-Doua.jpg");
     width: 100%;
     height: 30vh;
     background-attachment: fixed;
