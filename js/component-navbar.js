@@ -11,7 +11,7 @@ class Navbar extends HTMLElement{
                     <button aria-label="Fermer le menu" class="icon cancel-btn" onclick="menuclose()">
                         <i class="fas fa-times"></i>
                     </button>
-                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="formation.html">Formation</a></li>
                     <li><a href="contenu.html">Contenu</a></li>
                     <li><a href="temoignages.html">Témoignages</a></li>
